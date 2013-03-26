@@ -1,5 +1,5 @@
 /**
- * @author Stiles
+ * @author Stiles Watson
  */
 $(document).ready(function(){
 	var uncompletedToDoList = new ToDoList($("#ToDo_list_ol"), true),
