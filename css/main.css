@@ -1,0 +1,210 @@
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	margin:0;
+	padding:0;
+}
+html {
+	font-size:100%
+}
+body {
+	font-size:100%;
+	max-width:960px;
+	text-align:center;
+	margin:0 auto;
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body * {
+	text-align:left;
+}
+b {
+	font-weight:normal
+}
+li b {
+	overflow:auto;
+}
+#main, #main_header, #main_footer {
+	width:100%;
+}
+#main {
+	background-color:#ccc;
+	height:auto;
+	padding:.75em;
+	padding:.75rem;
+}
+#main_header {
+	margin:1.5rem 0;
+	font-size:1.5rem;
+}
+#main_footer {
+	margin:1.5rem 0;
+	padding:1.5rem .25em;
+	clear:both;
+}
+#main_footer h2 + p {
+	margin-top:.5em;
+	margin-top:.5rem;
+}
+#main_footer h3 {
+	margin-top:1em;
+	margin-top:1rem;
+}
+#ToDo_new {
+	width:60%;
+}
+#ToDo_adder {
+	padding-bottom:2rem;
+}
+#ToDo_adder input {
+	height:1.75em;
+	height:1.75rem;
+	padding-left:.25em;
+	padding-left:.25rem;
+	font-size:1.25em;
+	font-size:1.25rem;
+}
+#ToDo_adder input[type='submit'] {
+	padding: 0 .25em;
+	padding: 0 .25rem;
+	height:1.75em;
+	height:1.75rem;
+	font-size:1.25em;
+	font-size:1.25rem;
+}
+#ToDo_list, #ToDo_completed {
+	width:48%;
+	height:auto;
+	background-color:#222;
+	color:#fff;
+	padding:.25em;
+	padding:.25rem;
+	float:left;
+	clear:none;
+}
+#ToDo_list {
+	margin-right:2%;
+}
+#ToDo_completed {
+	margin-left:2%;
+}
+#ToDo_list header, #ToDo_completed header {
+	padding:.25em;
+	padding:.25rem;
+}
+#ToDo_list header h1, #ToDo_completed header h1 {
+	padding-left:.25em;
+	padding-left:.25rem;
+}
+#ToDo_list_ol, #ToDo_list_completed  {
+	width:100%;
+}
+#ToDo_list_ol > li, #ToDo_list_completed > li {
+	padding:.5rem;
+	list-style-type: none;
+	width:100%;
+}
+#ToDo_list_ol > li input[type='checkbox'],
+#ToDo_list_completed > li input[type='checkbox'] {
+	margin-right:.5em;
+	margin-left:1.5em;
+	margin-right:.5rem;
+	margin-left:1.5rem;
+	float:left;
+	clear:none;
+}
+#ToDo_list_ol > li span.ui-icon-arrowthick-2-n-s, 
+#ToDo_list_completed > li span.ui-icon-arrowthick-2-n-s {
+	position: absolute; 
+}
+#ToDo_edit {
+	padding:0;
+	margin:0;
+}
+.ToDo-hidden {
+	display:none;
+}
+.ToDo-display {
+	display:inline-block;
+}
+.ToDo-completed p {
+	text-decoration:line-through;
+}
+.ToDo-editor {
+	width:100%;
+}
+.ToDo-task-text {
+	-ms-word-break: break-all;
+	word-break:break-word;
+	display:inline-block;
+}
+.ToDo-item-wrapper {
+	width:100%;
+	height:auto;
+	display:inline-block;
+	float:left;
+	clear:none;
+}
+.ToDo-task-text-wrapper {
+	width:70%;
+	float:left;
+	display:inline-block;
+	clear:none;
+}
+.ToDo-standard-controls,
+.ToDo-editing-controls,
+.ToDo-delete-controls {
+	display:inline;
+	margin:0;
+	padding:0;
+	float:left;
+	clear:none;
+}
+.ToDo-standard-controls li, 
+.ToDo-editing-controls li,
+.ToDo-delete-controls li {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+.ToDo-standard-controls li span, 
+.ToDo-editing-controls li span,
+.ToDo-delete-controls li span {
+	display:inline-block;
+	margin:.25em;
+	margin:.25rem;
+	padding:0;
+}
+
+.ui-icon-disk, 
+.ui-icon-pencil,
+.ui-icon-trash,
+.ui-icon-cancle {
+	padding:0;
+	margin:0;
+}
+
+.rounded {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>html5</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Stiles" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" href="css/main.css"/>
+	</head>
+	<body>
+		<header id="main_header">
+			<h1>Git-R-Done!</h1>
+		</header>
+		<section id="main" class="cf rounded">
+			<section id="ToDo_add">
+				<form id="ToDo_adder" action="" method="post">
+					<input type="text" id="ToDo_new" value="" placeholder="What ain't done?" />
+					<input type="submit" value="Add" />
+				</form>
+			</section>
+			<section id="ToDo_list" class="rounded">
+				<header><h1 class="counter-off">Ain't Done</h1></header>
+				<ol id="ToDo_list_ol" class="ToDo-hidden"></ol>
+			</section>
+			<section id="ToDo_completed" class="rounded">
+				<header><h1 class="counter-off">Done. Oh Yeah!</h1></header>
+				<ul id="ToDo_list_completed" class="ToDo-hidden"></ul>
+			</section>
+		</section>
+		<footer id="main_footer">
+			<h2>Disclaimer</h2>
+			<p>This To-Do Web App is for demonstration purposes only. It is written using primarily HTML5, CSS3, jQuery and jQuery UI. All ToDo items are stored locally using the localStorage API so there is no back-end code what-so-ever and runs completely in the browser.
+			   The localStorage API provides browser-specific, persistant storage across sessions so the list items will persist until the browser's cache is emptied. The items are not avaliable in any other browser or on any other computer, nor is this app secure or hack-proof.</p>
+			<h3>A totally unResponsive and nonAdaptive To-Do Web App</h3>
+			<p>Built by Stiles Watson</p>
+		</footer>
+	</body>
+</html>
